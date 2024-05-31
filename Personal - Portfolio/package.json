@@ -1,0 +1,16 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "building my portfolio website",
+  "main": "index.js",
+  "type":"module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Juhimaru21/My-portfolio"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juhi maru",
+  "license": "ISC"
+}
