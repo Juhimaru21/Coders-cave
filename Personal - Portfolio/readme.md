@@ -1,1 +1,0 @@
-This is my first project about myself. I used HTML to structure website , CSS to style it in effective way and basic use of JavaScript. This project include a multiple pages like about ,contact and project page which is link to home page. I added animation in background images and how to glow a text.
