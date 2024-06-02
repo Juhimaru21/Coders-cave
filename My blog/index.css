@@ -1,0 +1,315 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+  
+  
+  
+body{
+    height: 100vh;
+    width:100%;
+    font-family:pacifico;
+    background-color:#eff5fb;
+    
+}
+
+
+nav ul{
+ 
+    width:100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    bottom: 0;
+
+}
+nav li{
+    bottom:0;
+    text-decoration: none;
+    height:50px;
+ }
+ nav a{
+    height:100%;
+   
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+nav a:hover{
+  color:rgba(0, 0, 0, 0.319) ;
+}
+nav li:first-child{
+     margin-right:auto;   
+}
+.cross{
+    color: white;
+}
+ .sidebar{
+    position: fixed;
+    padding: 30px;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100px;
+    z-index:999;
+    background-color:rgba(0, 0, 0, 0.545);
+    backdrop-filter: blur();
+    box-shadow: -10px 0 10px rgba(219, 202, 202, 0.974);
+    display:none;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: flex-start;
+
+}
+.sidebar li{
+    width:100%;
+
+}
+.sidebar a{
+    width:100%;
+}
+header{
+
+    background-color: pink;
+    color:white;
+    text-align: center;
+    padding:20px;
+    overflow:visible;
+
+
+    
+}
+.profile-container {
+    position: fixed;
+    top: 0; 
+    right:20px;
+    border-radius: 10px;
+    
+  }
+.profile-pic img {
+    margin-top: 10px;
+    
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+  }
+  .profile-name {
+    color: black;
+    font-size: 18px; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+  }
+section{
+    margin: auto;
+    font-size: 40px;
+    margin-top: 10px;
+    
+}
+.college{
+    height: 100vh;
+    width:100%;
+    background-image: url("images/college\ life.jpeg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position:50% 50%;
+    
+    color:rgb(21, 17, 17);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: #394bd4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #544feb;
+}
+.food{
+    height: 100vh;
+    width:100%;
+    background-image: url("images/burger.avif");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position:50% 50%;
+ 
+    color:rgb(21, 18, 18);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.travel{
+    height: 100vh;
+    width:100%;
+    background-image: url("images/travel.avif");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position:50% 50%;
+    
+    color:rgb(219, 200, 200);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.545);
+    
+}
+.foot{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+.icon {
+    width: 100%;
+    height:40px;
+   padding:10px;
+    text-decoration: none;
+    filter: drop-shadow(0 0 10px rgba(8, 52, 56, 0.886));
+    margin:0 5px;
+
+}
+  .icon:hover {
+    opacity: 0.7;
+  }
+  .copyright {
+    text-align: center;
+    color: #fff; 
+    font-size: 0.8rem; 
+    margin: 5px 0; 
+    font-size: 18px;
+  }
+
+  .container {
+    overflow: auto;
+    width:70%;
+  }
+  
+  .image {
+    float: left;
+    margin: 10px;
+  }
+  
+  .text {
+    background-color: grey;
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 150px; /* adjust the margin to match the image width */
+  }
+  /* Media queries for smaller screen sizes */
+  @media only screen and (max-width: 768px) {
+    /* Adjustments for tablets and smaller screens */
+    nav ul {
+      flex-direction: column;
+    }
+    nav li {
+      height: auto;
+    }
+    nav a {
+      height: auto;
+      padding: 10px;
+    }
+   .sidebar {
+      width: 80px;
+      padding: 10px;
+    }
+   .profile-container {
+      right: 10px;
+    }
+    section {
+      width: 100%;
+      font-size: 24px;
+    
+    }
+   .college,.food,.travel {
+      height: 60vh;
+      background-size: cover;
+    }
+   .btn {
+      padding: 5px 10px;
+    }
+    footer {
+      position: relative;
+      bottom: auto;
+    }
+   .foot {
+      flex-wrap: wrap;
+    }
+   .icon {
+      width: 30px;
+      height: 25px;
+      padding: 5px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    /* Adjustments for phones */
+    nav ul {
+      flex-direction: column;
+    }
+    nav li {
+      height: auto;
+    }
+    nav a {
+      height: auto;
+      padding: 5px;
+    }
+   .sidebar {
+      width: 60px;
+      padding: 5px;
+    }
+   .profile-container {
+      right: 5px;
+    }
+    section {
+      width: 90%;
+      font-size: 18px;
+    
+      
+    }
+   .college,.food,.travel {
+      height: 20vh;
+      background-size: cover;
+    }
+   .btn {
+      padding: 3px 5px;
+    }
+    footer {
+      position: relative;
+      bottom: auto;
+    }
+   .foot {
+      flex-wrap: wrap;
+    }
+   .icon {
+      width: 20px;
+      height: 15px;
+      padding: 3px;
+    }
+  }

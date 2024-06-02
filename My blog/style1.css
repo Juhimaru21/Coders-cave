@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height:100vh;
+    width: 100%;
+    background-color:#eff5fb;
+}
+.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .back-arrow:hover {
+    color: #0a0a0a;
+  }
+
+header{
+    background-color: pink;
+    font-family: 'Courier New', Courier, monospace;
+    padding:20px;
+    right:0;
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .img-text-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .img {
+    flex: 1 1 400px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  article {
+    flex: 1 1 calc(100% - 420px);
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  article h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  article p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+  
+  .middle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .text {
+    font-family: Arial, Helvetica, sans-serif;
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+  .image1 {
+    max-width: 50%;
+    height: auto;
+  }
+  
+  .image1 img {
+    display: block;
+    max-width: 50%;
+    height: auto;
+  }
+
+  @media screen and (max-width: 480px) {
+ .img {
+    flex: 1 1 100%;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  article {
+    flex: 1 1 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+ .middle {
+    flex-direction: column;
+  }
+
+ .text {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+ .image1 {
+    max-width: 100%;
+    height: auto;
+  }
+
+ .image1 img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Laptops (max-width: 1024px) */
+
+@media screen and (max-width: 1024px) {
+ .img {
+    flex: 1 1 300px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+
+  article {
+    flex: 1 1 calc(100% - 320px);
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+ .middle {
+    gap: 10px;
+  }
+
+ .text {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+ .image1 {
+    max-width: 40%;
+    height: auto;
+  }
+
+ .image1 img {
+    display: block;
+    max-width: 40%;
+    height: auto;
+  }
+}

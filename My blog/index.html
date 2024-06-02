@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My BLOG</title>
+    <link rel="stylesheet" href="index.css">
+
+
+</head>
+<body>
+    <header>
+        <nav> 
+            <ul class="sidebar">
+                <li  onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="24px" fill="rgb(48, 45, 45)"><path  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="college.html">College Life</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="travel.html">Travel</a></li>
+    
+                
+            </ul>
+            <ul><li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="30px"  fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li></ul>
+        </nav>
+        <p style="font-size: 50px;top:0">MY BLOG</p>
+        <p style="font-size: 18px;"> create your own space</p>
+        
+    </header>
+    
+        
+     <section>
+        <div class="college">
+           <h1>College Life</h1>
+           <button onclick="openNewPage()" class="btn">View</button>
+        </div>
+
+        <div class="food">
+            <h1>Foodie</h1>
+           <button onclick="openNewPage1()" class="btn">View</button>
+        </div>
+        <div class="travel">
+            <h1>Travel</h1>
+           <button onclick="openNewPage2()" class="btn">View</button>
+        </div>
+     </section>
+ 
+    <footer>
+        <div class="foot">
+            <a href="https://www.instagram.com/juhi__maru" >
+                <img class="icon" src="images/instagram-logo-fill.svg" alt="instagram">
+              </a>
+            <a href="https://www.linkedin.com/in/juhi-maru-21jan06" >
+                <img class="icon" src="images/linkedin.svg" alt="LinkedIn">
+              </a>
+              <a href="https://github.com/Juhimaru21">
+                <img class="icon" src="images/github.svg" alt="GitHub">
+              </a>
+              <a href="tel: +91 9352551824">
+                <img class="icon" src="images/phone-solid.svg" alt="Phone">
+              </a>
+            
+        </div>
+        
+          <p class="copyright">&copy; 2024 My Blog</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
